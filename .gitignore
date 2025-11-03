@@ -1,0 +1,171 @@
+# ==============================================
+# 操作系统相关文件
+# ==============================================
+# Windows 系统
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS 系统
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+nvram.txt
+
+# Linux 系统
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+
+# ==============================================
+# 开发工具/IDE 配置文件
+# ==============================================
+# VS Code
+.vscode/
+*.code-workspace
+.history/
+*.sublime-*
+
+# IntelliJ IDEA (WebStorm, PyCharm 等)
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+build/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Vim
+*.swp
+*.swo
+*.vim
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+
+
+# ==============================================
+# 编程语言通用忽略规则
+# ==============================================
+# 编译/构建产物
+dist/
+build/
+target/
+out/
+bin/
+obj/
+
+# 依赖目录
+node_modules/
+vendor/
+.pnp/
+.pnp.js
+
+# 缓存文件
+.cache/
+.eslintcache
+*.log
+logs/
+
+# 环境变量/配置文件（含敏感信息）
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+config/secrets.json
+
+
+# ==============================================
+# 特定语言/框架补充
+# ==============================================
+# JavaScript/TypeScript
+*.js.map
+*.ts.map
+coverage/
+.eslintrc.js
+.prettierrc.js
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.jmod
+*.jnilib
+
+# Go
+vendor/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+debug/
+release/
+
+# PHP
+vendor/
+composer.lock
+*.php_cs.cache
+.phpunit.result.cache
+.php-cs-fixer.cache
+
+# Rust
+target/
+Cargo.lock
+
+# Swift
+.build/
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+
+# ==============================================
+# 其他临时文件
+# ==============================================
+*.tmp
+*.temp
+*.bak
+*.old
+*.swp
+.DS_Store
