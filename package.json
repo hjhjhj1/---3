@@ -4,18 +4,17 @@
   "description": "Paper Plane Social App",
   "main": "main.js",
   "scripts": {
-    "dev:h5": "uni-app-cli serve",
-    "dev:mp-weixin": "uni-app-cli build --watch --platform mp-weixin",
-    "build:h5": "uni-app-cli build --platform h5",
-    "build:mp-weixin": "uni-app-cli build --platform mp-weixin"
+    "dev:h5": "uni serve",
+    "dev:mp-weixin": "uni build --watch --platform mp-weixin",
+    "build:h5": "uni build --platform h5",
+    "build:mp-weixin": "uni build --platform mp-weixin"
   },
   "dependencies": {
     "vue": "^3.2.0",
-    "@dcloudio/uni-app": "^3.0.0",
-    "@dcloudio/uni-components": "^3.0.0"
+    "@dcloudio/uni-app": "vue3",
+    "@dcloudio/uni-components": "vue3"
   },
   "devDependencies": {
-    "@dcloudio/uni-app-cli": "^3.0.0",
     "@vue/cli-plugin-babel": "^5.0.0",
     "@vue/cli-service": "^5.0.0"
   },
