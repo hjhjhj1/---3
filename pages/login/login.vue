@@ -14,6 +14,14 @@
 				type="password"
 				class="input-item"
 			></uni-input>
+			<view class="verification-code-container">
+				<uni-input
+					v-model="verificationCode"
+					placeholder="请输入验证码"
+					class="input-item verification-code-input"
+				></uni-input>
+				<VerificationCodeButton @onResend="sendVerificationCode" />
+			</view>
 			<uni-button
 				type="primary"
 				class="login-btn"
@@ -30,11 +38,17 @@
 </template>
 
 <script>
+import VerificationCodeButton from './components/VerificationCodeButton.vue';
+
 export default {
+	components: {
+		VerificationCodeButton
+	},
 	data() {
 		return {
 			username: '',
-			password: ''
+			password: '',
+			verificationCode: ''
 		};
 	},
 	methods: {
@@ -50,6 +64,13 @@ export default {
 			uni.showToast({
 				title: '注册功能开发中',
 				icon: 'none'
+			});
+		},
+		sendVerificationCode() {
+			// 发送验证码逻辑
+			uni.showToast({
+				title: '验证码发送成功',
+				icon: 'success'
 			});
 		}
 	}
@@ -95,6 +116,18 @@ export default {
 
 .login-btn {
 	margin-bottom: 20rpx;
+}
+
+.verification-code-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30rpx;
+}
+
+.verification-code-input {
+	flex: 1;
+	margin-right: 20rpx;
 }
 
 .register-link {
