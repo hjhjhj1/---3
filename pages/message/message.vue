@@ -4,7 +4,7 @@
 			<text class="header-title">消息</text>
 		</view>
 		<view class="message-list">
-			<view class="message-item" v-for="(message, index) in messages" :key="index">
+			<view class="message-item" v-for="(message, index) in messages" :key="index" @click="goToChat(message)">
 				<image class="avatar" :src="message.avatar" mode="aspectFill"></image>
 				<view class="message-content">
 					<view class="user-info">
@@ -44,6 +44,7 @@ export default {
 	methods: {
 		// 跳转到聊天页面
 		goToChat(message) {
+			console.log('跳转到聊天页面：', message);
 			uni.navigateTo({
 				url: '/pages/chat/chat?username=' + message.username
 			});
