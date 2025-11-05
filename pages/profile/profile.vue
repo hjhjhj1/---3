@@ -1,7 +1,7 @@
 <template>
 	<view class="profile-container">
 		<view class="profile-header">
-			<image class="avatar" src="/static/logo.png" mode="aspectFill"></image>
+			<image class="avatar" src="/static/profile.png" mode="aspectFill"></image>
 			<view class="user-info">
 				<text class="username">张三</text>
 				<text class="gender">男</text>
