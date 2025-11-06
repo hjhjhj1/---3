@@ -18,12 +18,7 @@
     "@vue/cli-plugin-babel": "^5.0.0",
     "@vue/cli-service": "^5.0.0"
   },
-  "keywords": [
-    "uni-app",
-    "vue",
-    "social",
-    "app"
-  ],
+  "keywords": ["uni-app", "vue", "social", "app"],
   "author": "",
   "license": "MIT"
 }
